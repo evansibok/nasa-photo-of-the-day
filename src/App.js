@@ -24,11 +24,14 @@ function Gallery() {
   }, [])
 
   return ( data && (
-    <div className="App bodyCon">
-      <div>
-        <Header title={data.title} version={data.service_version} />
+    <div className="App">
+      <div id="bodyCon">
+        <Header title={data.title} 
+        version={data.service_version} />
         <Main image={data.url} />
-        <Section copyright={data.copyright} date={data.date} explanation={data.explanation} />
+        <Section copyright={data.copyright} 
+        date={data.date} 
+        explanation={data.explanation} />
       </div>
     </div>
   )

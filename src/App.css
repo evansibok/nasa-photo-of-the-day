@@ -32,18 +32,23 @@
   }
 }
 
-.bodyCon {
+#bodyCon {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 500px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }
 
 .image {
   width: 100%
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+.imageCon {
+  max-width: 100%;
 }
 
 .bottomDetails {

@@ -2,11 +2,10 @@ import React from "react";
 
 function Header({ title, version}) {
 
-
     return (
         <div className="header">
-            <div>{title}</div>
-            <div>Version: {version}</div>
+            <h3>{title}</h3>
+            <h3>Version: {version}</h3>
         </div>
     );
 }
