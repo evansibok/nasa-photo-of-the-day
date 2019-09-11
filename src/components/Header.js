@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
 
-function Header() {
+function Header({ title, version}) {
 
 
     return (
-        <div>
-
+        <div className="header">
+            <div>{title}</div>
+            <div>Version: {version}</div>
         </div>
     );
 }

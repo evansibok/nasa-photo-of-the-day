@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.css";
 
-function Main() {
+function Main({ image }) {
 
 
     return (
         <div>
-
+            <img className="image" src={image} alt="today's image" />
         </div>
     );
 }
