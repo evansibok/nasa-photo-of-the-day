@@ -6,7 +6,6 @@ import Section from './components/Section';
 import "./App.css";
 
 
-
 const nasaApi = "https://api.nasa.gov/planetary/apod?api_key=HM862xmQgdGXWV6E6X37GTMWbZ4aCL9dqp8Lz5jD";
 
 
@@ -28,7 +27,7 @@ function Gallery() {
       <div id="bodyCon">
         <Header title={data.title} 
         version={data.service_version} />
-        <Main image={data.url} />
+        <Main image={data.hdurl} />
         <Section copyright={data.copyright} 
         date={data.date} 
         explanation={data.explanation} />
