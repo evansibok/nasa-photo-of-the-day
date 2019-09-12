@@ -34,19 +34,12 @@
 
 #bodyCon {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 900px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
-}
-
-.version {
-  display: flex;
-  align-items: center;
-  font-size: 0.55rem;
 }
 
 .image {
@@ -55,7 +48,7 @@
 }
 
 .imageCon {
-  max-width: 500px;
+  max-width: 100%;
   overflow: hidden;
 }
 

@@ -10,11 +10,11 @@ const H1Div = styled.div`
 `;
 
 const StyledH1 = styled.h1`
-    color: #ed344d;
-    border: 2px solid #ed344d;
+    color: #fff;
+    background: #ed344d;
     padding: 1em;
     font-size: 1.5rem;
-    width: 350px;
+    width: 50%;
 `;
 
 const StyledHeader = styled.div`
@@ -23,16 +23,28 @@ const StyledHeader = styled.div`
     font-size: 0.8rem;
 `;
 
+const TitleH3 = styled.h3`
+    font-size: 1.2rem;
+    color: #8d5696;
+`;
+
+const VersionH4 = styled.h4`
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #b26fbd;
+`;
+
 function Header({ title, version}) {
 
     return (
         <div>
             <H1Div>
-                <StyledH1>Nasa Photo of the Day!</StyledH1>
+                <StyledH1>NASA Photo of the Day!</StyledH1>
             </H1Div>
             <StyledHeader>
-                <h3>{title}</h3>
-                <h3 className="version">Version: {version}</h3>
+                <TitleH3>{title}</TitleH3>
+                <VersionH4 className="version">Version: {version}</VersionH4>
             </StyledHeader>
 
         </div>
