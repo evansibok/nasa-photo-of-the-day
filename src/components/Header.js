@@ -15,6 +15,7 @@ const StyledH1 = styled.h1`
     padding: 1em;
     font-size: 1.5rem;
     width: 50%;
+    text-transform: uppercase;
 `;
 
 const StyledHeader = styled.div`
@@ -35,6 +36,8 @@ const VersionH4 = styled.h4`
     color: #b26fbd;
 `;
 
+
+// Header Component Declaration
 function Header({ title, version}) {
 
     return (

@@ -1,5 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 
+// Section Styles
+
+
+
+// Section Component Declaration
 function Section({ copyright, date, explanation}) {
 
 
