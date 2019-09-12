@@ -1,7 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
+
 // Section Styles
+const BottomDetails = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+const ImageCredits = styled.h4`
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    span {
+        font-weight: bold;
+    }
+`;
 
 
 
@@ -11,10 +24,10 @@ function Section({ copyright, date, explanation}) {
 
     return (
         <div>
-            <div className="bottomDetails">
-                <h4>Image Credits: {copyright}</h4>
+            <BottomDetails>
+                <ImageCredits>Image Credits: <span>{copyright}</span></ImageCredits>
                 <h4>{date}</h4>
-            </div>
+            </BottomDetails>
             <p className="explain">{explanation}</p>
         </div>
     );

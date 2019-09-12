@@ -52,12 +52,6 @@
   overflow: hidden;
 }
 
-.bottomDetails {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.55rem;
-}
-
 .explain {
   font-size: 0.65rem;
   text-align: justify;

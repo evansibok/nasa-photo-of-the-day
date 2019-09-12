@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 function Main({ image }) {
 
@@ -7,7 +6,7 @@ function Main({ image }) {
         <div className="imageCon">
             <img className="image"
                 src={image}
-                alt="today's image"
+                alt="today's photo"
             />
         </div>
     );
