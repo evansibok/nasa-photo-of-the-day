@@ -27,7 +27,7 @@ function Gallery() {
       <div id="bodyCon">
         <Header title={data.title} 
         version={data.service_version} />
-        <Main image={data.hdurl} />
+        <Main image={data.url} />
         <Section copyright={data.copyright} 
         date={data.date} 
         explanation={data.explanation} />
