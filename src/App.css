@@ -34,26 +34,12 @@
 
 #bodyCon {
   margin: 0 auto;
-  max-width: 500px;
-}
-
-.h1Head {
-  margin: 0;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  padding: 0;
+  max-width: 900px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
-}
-
-.version {
-  display: flex;
-  align-items: center;
-  font-size: 0.55rem;
 }
 
 .image {
@@ -62,19 +48,6 @@
 }
 
 .imageCon {
-  max-width: 500px;
+  max-width: 100%;
   overflow: hidden;
-}
-
-.bottomDetails {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.55rem;
-}
-
-.explain {
-  font-size: 0.65rem;
-  text-align: justify;
-  font-weight: 500;
-  line-height: 1.7em;
 }
