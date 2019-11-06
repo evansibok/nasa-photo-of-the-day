@@ -16,8 +16,8 @@ function Gallery() {
   useEffect(() => {
     axios.get(nasaApi)
       .then(response => {
-        // debugger
-        setData(response.data)
+        debugger
+        // setData(response.data)
       })
       .catch(error => error)
   }, [])
@@ -25,12 +25,18 @@ function Gallery() {
   return ( data && (
     <div className="App">
       <div id="bodyCon">
-        <Header title={data.title} 
-        version={data.service_version} />
-        <Main image={data.url} />
-        <Section copyright={data.copyright} 
+        <Header 
+        title={data.title} 
+        version={data.service_version} 
+        />
+        <Main 
+        image={data.url} 
+        />
+        <Section 
+        copyright={data.copyright} 
         date={data.date} 
-        explanation={data.explanation} />
+        explanation={data.explanation} 
+        />
       </div>
     </div>
   )
