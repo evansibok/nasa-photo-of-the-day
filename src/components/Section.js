@@ -32,13 +32,12 @@ const ExplainStyle = styled.p`
 
 
 // Section Component Declaration
-function Section({ copyright, date, explanation}) {
+function Section({ date, explanation }) {
 
 
     return (
         <div>
             <BottomDetails>
-                <ImageCredits>Image Credits: <span>{copyright}</span></ImageCredits>
                 <DateStyle>{date}</DateStyle>
             </BottomDetails>
             <ExplainStyle>{explanation}</ExplainStyle>

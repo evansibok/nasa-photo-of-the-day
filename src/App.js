@@ -15,10 +15,7 @@ function Gallery() {
 
   useEffect(() => {
     axios.get(nasaApi)
-      .then(response => {
-        debugger
-        // setData(response.data)
-      })
+      .then(response => (setData(response.data)))
       .catch(error => error)
   }, [])
 
@@ -33,7 +30,6 @@ function Gallery() {
         image={data.url} 
         />
         <Section 
-        copyright={data.copyright} 
         date={data.date} 
         explanation={data.explanation} 
         />
