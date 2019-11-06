@@ -7,7 +7,7 @@ const BottomDetails = styled.div`
     display: flex;
     justify-content: space-between;
 `;
-const ImageCredits = styled.h4`
+const fileTypeStyle = styled.h4`
     font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
@@ -18,7 +18,7 @@ const ImageCredits = styled.h4`
     }
 `;
 
-const DateStyle = styled(ImageCredits)`
+const DateStyle = styled(fileTypeStyle)`
     font-weight: bold;
 `;
 
@@ -32,14 +32,18 @@ const ExplainStyle = styled.p`
 
 
 // Section Component Declaration
-function Section({ date, explanation }) {
+function Section({ date, explanation, mediaType }) {
 
 
     return (
         <div>
-            <BottomDetails>
-                <DateStyle>{date}</DateStyle>
-            </BottomDetails>
+            <div>
+
+                <fileTypeStyle>{mediaType}</fileTypeStyle>
+                <BottomDetails>
+                    <DateStyle>{date}</DateStyle>
+                </BottomDetails>
+            </div>
             <ExplainStyle>{explanation}</ExplainStyle>
         </div>
     );

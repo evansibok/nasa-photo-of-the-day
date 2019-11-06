@@ -32,6 +32,7 @@ function Gallery() {
         <Section 
         date={data.date} 
         explanation={data.explanation} 
+        mediaType={data.media_type}
         />
       </div>
     </div>
