@@ -20,7 +20,7 @@ function Gallery() {
   }, [])
 
   return ( data && (
-    <div className="text-center">
+    <div className="App">
       <div id="bodyCon">
         <Header 
         title={data.title} 
