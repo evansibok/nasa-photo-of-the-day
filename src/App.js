@@ -3,7 +3,7 @@ import axios from 'axios';
 import Header from './components/Header';
 import Main from './components/Main';
 import Section from './components/Section';
-import "./App.css";
+import "./css/tailwind.css";
 
 
 const nasaApi = "https://api.nasa.gov/planetary/apod?api_key=HM862xmQgdGXWV6E6X37GTMWbZ4aCL9dqp8Lz5jD";
@@ -20,7 +20,7 @@ function Gallery() {
   }, [])
 
   return ( data && (
-    <div className="App">
+    <div className="text-center">
       <div id="bodyCon">
         <Header 
         title={data.title} 
