@@ -7,18 +7,8 @@ const BottomDetails = styled.div`
     display: flex;
     justify-content: space-between;
 `;
-const fileTypeStyle = styled.h4`
-    font-size: 0.8rem;
-    font-weight: 400;
-    font-style: italic;
 
-    span {
-        font-weight: bold;
-        font-style: normal;
-    }
-`;
-
-const DateStyle = styled(fileTypeStyle)`
+const DateStyle = styled.h4`
     font-weight: bold;
 `;
 
@@ -38,8 +28,6 @@ function Section({ date, explanation, mediaType }) {
     return (
         <div>
             <div>
-
-                <fileTypeStyle>{mediaType}</fileTypeStyle>
                 <BottomDetails>
                     <DateStyle>{date}</DateStyle>
                 </BottomDetails>

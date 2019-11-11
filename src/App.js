@@ -15,7 +15,7 @@ function Gallery() {
 
   useEffect(() => {
     axios.get(nasaApi)
-      .then(response => (setData(response.data)))
+      .then(response => setData(response.data))
       .catch(error => error)
   }, [])
 
